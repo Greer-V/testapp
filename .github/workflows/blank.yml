@@ -1,4 +1,6 @@
 name: Test_Deploy
+env:
+  DEPLOY_ID: deploy_id_is${{ github.sha }}
 
 on: 
   push:
@@ -11,4 +13,6 @@ jobs:
     steps:
      - name: Print Hello World     
        run : echo "Hello World, Print Step"
+     - name: Print ID Deploy
+       run : echo "Deploy id is ${{ DEPLOY_ID }}"
       
