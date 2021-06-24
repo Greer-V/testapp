@@ -14,5 +14,5 @@ jobs:
      - name: Print Hello World     
        run : echo "Hello World, Print Step"
      - name: Print ID Deploy
-       run : echo "Deploy id is ${{ DEPLOY_ID }}"
+       run : echo "Deploy id is ${{ env.DEPLOY_ID }}"
       
