@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-     -name: Print Hello World
-      run : echo "Hello World STEP 1"
+     - name: Print Hello World     
+       run : echo "Hello World, Print Step"
       
